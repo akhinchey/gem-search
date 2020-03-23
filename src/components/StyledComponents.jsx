@@ -3,6 +3,20 @@ import { Link } from 'react-router-dom';
 import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled';
 
+const breakpoints = [720, 500];
+
+const mq = breakpoints.map(
+  bp => `@media (max-width: ${bp}px)`
+);
+
+const colors = {
+  white: '#fff',
+  grey: '#999',
+  lightGrey: '#b0b0b0',
+  orange: '#f09722',
+  rouge: '#d25c71'
+};
+
 export const GlobalStyle = () => (
   <Global
     styles={css`
@@ -17,14 +31,14 @@ export const GlobalStyle = () => (
 
 export const AppHeader = styled.h1`
   display: inline;
-  color: #fff;
+  color: ${colors.white};
   font-weight: 100;
-  @media (max-width: 720px) {
+  ${mq[0]} {
     display: block;
     text-align: center;
   }
   a {
-    color: #fff;
+    color: ${colors.white};
     text-decoration: none;
   }
 `;
@@ -33,7 +47,7 @@ export const GemUl = styled.ul`
   list-style: none;
   padding: 0;
   li {
-    border-bottom: 1px solid #b0b0b0;
+    border-bottom: 1px solid ${colors.lightGrey};
     margin-bottom: 20px;
 
     :first-of-type {
@@ -43,8 +57,12 @@ export const GemUl = styled.ul`
 `;
 
 export const HeaderWrapper = styled.header`
-  background: rgb(210,92,113);
-  background: linear-gradient(90deg, rgba(210,92,113,1) 26%, rgba(255,198,103,1) 79%);
+  background: ${colors.rouge};
+  background: linear-gradient(
+    90deg,
+    rgba(210,92,113,1) 26%,
+    rgba(255,198,103,1) 79%
+  );
   padding: 12px;
   margin: 0;
 `;
@@ -57,7 +75,7 @@ export const SearchSection = styled.div`
 export const SearchFormWrapper = styled.div`
   display: inline-block;
   padding-left: 20px;
-  @media (max-width: 720px) {
+  ${mq[0]} {
     display: block;
     padding-bottom: 20px;
     text-align: center;
@@ -78,12 +96,12 @@ export const SearchInput = styled.input`
   :focus {
     outline: none;
   }
-  @media (max-width: 720px) {
+  ${mq[0]} {
     padding: 9px 65px 10px 10px;
     width: 26%;
     margin-right: 1%;
   }
-  @media (max-width: 500px) {
+  ${mq[1]} {
     width: 38%;
   }
 `;
@@ -93,7 +111,7 @@ export const ViewSavedLinkSection = styled.div`
   float: right;
   padding-top: 10px;
   a {
-    color: #fff;
+    color: ${colors.white};
     font-weight: 700;
     background: rgba(255, 255, 255, 0.3);
     transition: background 0.5s ease-out;
@@ -104,7 +122,7 @@ export const ViewSavedLinkSection = styled.div`
   a:hover {
     background: rgba(255, 255, 255, 0.5);
   }
-  @media (max-width: 720px) {
+  ${mq[0]} {
     display: block;
     float: none;
     text-align: center;
@@ -125,23 +143,23 @@ export const MainContent = styled.div`
   width: 70%;
   max-width: 1100px;
   margin: auto;
-  color: #999;
+  color: ${colors.grey};
   font-size: 11pt;
   padding: 10px 0 50px;
   a {
     text-decoration: none;
   }
-  @media (max-width: 720px) {
+  ${mq[0]} {
     width: 80%;
   }
-  @media (max-width: 500px) {
+  ${mq[1]} {
     width: 85%;
   }
 `;
 
 export const MainContentHeader = styled.div`
   font-weight: lighter;
-  border-bottom: 1px solid #b0b0b0;
+  border-bottom: 1px solid ${colors.lightGrey};
   padding: 20px 0;
   font-size: 1.3em;
 `;
@@ -151,7 +169,7 @@ export const SubHeader = styled.div`
 `;
 
 export const Query = styled.span`
-  color: #f09722;
+  color: ${colors.orange};
   font-size: 1.5em;
 `;
 
@@ -159,7 +177,7 @@ export const GemName = styled.a`
   font-size: 1.3em;
   font-weight: bold;
   display: inline;
-  color: #d25c71;
+  color: ${colors.rouge};
 `;
 
 export const GemDescription = styled.p`
@@ -168,7 +186,8 @@ export const GemDescription = styled.p`
 `;
 
 const StyledButton = styled.button`
-  color: #fff;
+  color: ${colors.white};
+  background-color: ${colors.orange};
   cursor pointer;
   border: 0;
   border-radius: 15px;
@@ -181,12 +200,11 @@ const StyledButton = styled.button`
 export const SearchButton = styled(StyledButton)`
   position: absolute;
   left: 470px;
-  background-color: #f09722;
   font-size: 14px;
-  @media (max-width: 720px) {
+  ${mq[0]} {
     left: 60%;
   }
-  @media (max-width: 500px) {
+  ${mq[1]} {
     left: 63%;
   }
 `;
@@ -194,11 +212,10 @@ export const SearchButton = styled(StyledButton)`
 export const SaveButton = styled(StyledButton)`
   float: right;
   padding: 5px;
-  background-color: #f09722;
   border-radius: 12px;
   font-size: 14px;
 `;
 
 export const BackLink = styled(Link)`
-  color: #999;
+  color: ${colors.grey};
 `;
