@@ -1,6 +1,6 @@
 # Gem Search
 
-A simple WIP create-react app for searching various ruby gems. Users can save selected gems via localStorage.
+A simple WIP app for searching various Ruby gems. Users can save selected gems via localStorage.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `yarn start`
+### `yarn`
 
 Installs dependencies locally.
 
