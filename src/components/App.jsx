@@ -78,7 +78,7 @@ const App = () => {
             <Error />
           </Route>
           <Route path='*'>
-            <Redirect to='/' />
+            <Redirect to='/foo' />
           </Route>
         </Switch>
       </MainContent>
