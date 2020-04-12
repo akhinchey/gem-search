@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "https://rubygems.org/api/v1",
-  "homepage": "https://akhinchey.github.io/gem-search/",
+  "homepage": "https://akhinchey.github.io/gem-search",
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
