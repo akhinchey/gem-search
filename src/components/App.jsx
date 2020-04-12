@@ -77,7 +77,9 @@ const App = () => {
           <Route path='/error'>
             <Error />
           </Route>
-
+          <Route path='*'>
+            <Redirect to='/' />
+          </Route>
         </Switch>
       </MainContent>
     </>
