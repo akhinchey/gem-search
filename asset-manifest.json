@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/gem-search/static/js/main.a677b75d.chunk.js",
-    "main.js.map": "/gem-search/static/js/main.a677b75d.chunk.js.map",
+    "main.js": "/gem-search/static/js/main.6e8826fa.chunk.js",
+    "main.js.map": "/gem-search/static/js/main.6e8826fa.chunk.js.map",
     "runtime-main.js": "/gem-search/static/js/runtime-main.39539638.js",
     "runtime-main.js.map": "/gem-search/static/js/runtime-main.39539638.js.map",
-    "static/js/2.a3f92899.chunk.js": "/gem-search/static/js/2.a3f92899.chunk.js",
-    "static/js/2.a3f92899.chunk.js.map": "/gem-search/static/js/2.a3f92899.chunk.js.map",
+    "static/js/2.b4abcf61.chunk.js": "/gem-search/static/js/2.b4abcf61.chunk.js",
+    "static/js/2.b4abcf61.chunk.js.map": "/gem-search/static/js/2.b4abcf61.chunk.js.map",
     "index.html": "/gem-search/index.html",
-    "precache-manifest.360bda8b43c8934399fa5a57a1164b8e.js": "/gem-search/precache-manifest.360bda8b43c8934399fa5a57a1164b8e.js",
+    "precache-manifest.de3a9c827d34f5e30d6182f59a3fac3f.js": "/gem-search/precache-manifest.de3a9c827d34f5e30d6182f59a3fac3f.js",
     "service-worker.js": "/gem-search/service-worker.js",
-    "static/js/2.a3f92899.chunk.js.LICENSE.txt": "/gem-search/static/js/2.a3f92899.chunk.js.LICENSE.txt"
+    "static/js/2.b4abcf61.chunk.js.LICENSE.txt": "/gem-search/static/js/2.b4abcf61.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.39539638.js",
-    "static/js/2.a3f92899.chunk.js",
-    "static/js/main.a677b75d.chunk.js"
+    "static/js/2.b4abcf61.chunk.js",
+    "static/js/main.6e8826fa.chunk.js"
   ]
 }
