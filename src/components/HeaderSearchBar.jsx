@@ -20,7 +20,7 @@ const HeaderSearchBar = ({ formData, setFormData, handleSubmit }) => {
     <HeaderWrapper>
       <SearchSection>
         <AppHeader>
-          <Link onClick={() => setFormData('')} to='/'>Search Ruby Gems</Link>
+          <Link onClick={() => setFormData('')} to='/'>Search Ruby Gems foo</Link>
         </AppHeader>
         <SearchFormWrapper>
           <SearchForm onSubmit={handleSubmit}>
