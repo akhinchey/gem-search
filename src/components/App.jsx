@@ -78,7 +78,7 @@ const App = () => {
             <Error />
           </Route>
           <Route path='*'>
-            <Redirect to='/foo' />
+            <Redirect to='/gem-search' />
           </Route>
         </Switch>
       </MainContent>
