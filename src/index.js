@@ -9,7 +9,7 @@ import store, { persistor } from './store/storeConfig';
 ReactDOM.render(
 	<Provider store={store}>
 		<PersistGate loading={null} persistor={persistor}>
-			<Router>
+			<Router basename='/gem-search'>
 				<App />
 			</Router>
 		</PersistGate>
