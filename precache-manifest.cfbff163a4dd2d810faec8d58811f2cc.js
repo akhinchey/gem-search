@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1705d4289dc77a78c83c0106e578ee44",
+    "revision": "5dfa9f41b87e1b422693a250c991057c",
     "url": "/gem-search/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gem-search/static/js/2.e4aac455.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ed7fc7ae7a5992751ad6",
-    "url": "/gem-search/static/js/main.1fed60a6.chunk.js"
+    "revision": "b070fe784c3769f94052",
+    "url": "/gem-search/static/js/main.1a7dfc59.chunk.js"
   },
   {
     "revision": "9d2e0991a5ddc16032d6",
