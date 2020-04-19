@@ -24,7 +24,7 @@ const App = () => {
 
   const fetchGems = gemName => {
     axios
-      .get(`/search.json?query=${gemName}`)
+      .get(`http://localhost:3000/api/v1/search.json?query=${gemName}`)
       .then(response => {
         dispatch(setCurrentGems(response.data));
       })
@@ -76,9 +76,6 @@ const App = () => {
           </Route>
           <Route path='/error'>
             <Error />
-          </Route>
-          <Route path='*'>
-            <Redirect to='/' />
           </Route>
         </Switch>
       </MainContent>

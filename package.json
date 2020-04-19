@@ -2,8 +2,19 @@
   "name": "gem-search",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://rubygems.org/api/v1",
   "homepage": "https://akhinchey.github.io/gem-search",
+	"main": "server.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
@@ -13,6 +24,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "emotion": "^10.0.27",
+    "express": "^4.17.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-redux": "^7.2.0",
@@ -20,14 +32,6 @@
     "react-scripts": "3.4.0",
     "redux-persist": "^6.0.0",
     "redux-toolkit": "^1.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
