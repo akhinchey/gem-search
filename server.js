@@ -24,9 +24,9 @@ app.get('/api/**/*', (req, res) => {
   });
 });
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('dist'))
-}
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static('dist'))
+// }
 
 app.listen(PORT);
 

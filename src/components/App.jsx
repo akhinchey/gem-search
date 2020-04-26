@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 import {
   Switch,
   Route,
-  Redirect,
   useLocation,
   useHistory
 } from 'react-router-dom';
@@ -24,7 +23,7 @@ const App = () => {
 
   const fetchGems = gemName => {
     axios
-      .get(`http://localhost:3000/api/v1/search.json?query=${gemName}`)
+      .get(`http://localhost:5000/api/v1/search.json?query=${gemName}`)
       .then(response => {
         dispatch(setCurrentGems(response.data));
       })
